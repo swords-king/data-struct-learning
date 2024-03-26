@@ -9,7 +9,7 @@
  */
 void InsertSort(SqList &L) {
     int i, j;
-    int temp; //设置哨兵
+    int temp; //临时保存当前元素
     for (i = 1; i < L.length; i++) {
         if (L.r[i]<L.r[i-1]) {
             temp = L.r[i];
@@ -19,7 +19,6 @@ void InsertSort(SqList &L) {
             L.r[j+1] = temp;
         }
     }
-
 }
 
 int main () {
